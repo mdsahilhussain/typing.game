@@ -278,6 +278,7 @@ textarea {
 	}
 
 	.restart_btn {
+		display: none;
 		margin-top: 1.5rem;
 		right: 3%;
 		font-size: 0.8rem;
