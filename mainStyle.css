@@ -212,7 +212,7 @@ textarea {
 .restart_btn {
 	display: none;
 	position: absolute;
-	right: -5%;
+	right: 4%;
 	margin-top: -2.39rem;
 	background: #243441;
 	box-shadow: 5px 5px 11px #0e151a, -5px -5px 11px #3a5368;
