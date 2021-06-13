@@ -193,3 +193,19 @@ wpm = Math.round((((characterTyped / 5) / timeElapsed) * 60));
 cpm_text.textContent = cpm;
 wpm_text.textContent = wpm;
 }
+
+let text_one = document.querySelector("#T1");
+let text_two = document.querySelector("#T2");
+var x = window.matchMedia("(max-width: 800px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+  	text_one.textContent = "WPS";
+  	text_two.textContent = "CPS";
+  } else {
+  	text_one.textContent = "Words Per Minute";
+  	text_two.textContent = "Characters Per Minute";
+  }
+}
