@@ -20,7 +20,7 @@ body {
 	width: 100vw;
 }
 
-#preloader{
+#preloader {
 	display: block;
 	position: fixed;
 	width: 100%;
@@ -38,20 +38,25 @@ body {
 	padding: 1rem;
 }
 
-.social a{
+.social a {
 	text-decoration: none;
 	margin-bottom: 0.5rem;
 }
 
-.social  img{
+.social  img {
 	height: 1.2rem;
 }
 
-.social a:hover img{
-opacity: 0.5;
+.social a:hover img {
+	opacity: 0.5;
 }
 
-.A, .B, .C, .G, .Q, .J  {
+.A,
+.B,
+.C,
+.G,
+.Q,
+.J {
 	position: absolute;
 	z-index: -2;
 }
@@ -142,7 +147,7 @@ h6 {
 .wpm {
 	margin-right: 1rem;
 	width: 100%;
-	height: 7vh;
+	height: 100%;
 	background: #243441;
 	box-shadow: inset 11px 11px 32px #0e151a, inset -11px -11px 32px #3a5368
 }
@@ -205,9 +210,10 @@ textarea {
 }
 
 .restart_btn {
-	display: none;
+	display: block;
+	position: absolute;
+	right: -5%;
 	margin-top: -2.39rem;
-	transform: translateX(145vh);
 	background: #243441;
 	box-shadow: 5px 5px 11px #0e151a, -5px -5px 11px #3a5368;
 	color: #FF565D;
@@ -222,4 +228,130 @@ textarea {
 
 .correct_char {
 	color: #18A0FB;
+}
+
+@media screen and (max-width:1024px) {
+	h1 {
+		margin-top: 1.5rem;
+		font-size: 2rem;
+	}
+
+	h6 {
+		margin-bottom: 1rem;
+		font-size: 1rem;
+	}
+
+	.container {
+		padding: 0 0;
+		margin: 0 5pX;
+	}
+
+	.B {
+		bottom: 0%;
+		left: 2%;
+		height: 18rem;
+	}
+
+	.G {
+		bottom: 10%;
+		left: 16%;
+		height: 5rem;
+		z-index: -4;
+	}
+
+	.C {
+		bottom: 2%;
+		right: 8%;
+		height: 6rem;
+	}
+
+	.Q {
+		bottom: 3%;
+		right: 3%;
+		height: 18rem;
+	}
+
+	.J {
+		bottom: 1%;
+		right: 19%;
+		height: 5rem;
+	}
+
+	.restart_btn {
+		margin-top: 1.5rem;
+		right: 3%;
+		font-size: 0.8rem;
+	}
+
+	.social {
+		flex-direction: row;
+		top: 100%;
+		transform: translateY(-100%);
+	}
+
+	.social a {
+		margin-right: 1rem;
+	}
+
+}
+
+@media screen and (max-width:736px) {
+	h1 {
+		margin-top: 1rem;
+	}
+
+	h6 {
+		margin-bottom: 0.2rem;
+		font-size: 1rem;
+	}
+
+	.header {
+		height: 23vh;
+		margin-bottom: 1rem;
+	}
+
+	.timer,
+	.errors,
+	.accuracy,
+	.cpm,
+	.wpm {
+		height: 15vh;
+	}
+
+	.quote {
+		height: 18vh;
+		font-size: 1rem;
+	}
+
+	.inputArea {
+		margin-top: 1rem;
+		height: 7rem;
+	}
+		.social {
+		top: 100%;
+		transform: translateY(20%);
+	}
+
+}
+
+
+@media screen and (max-width:576px) {
+	.header {
+		padding: 0.8rem 0.2rem;
+		height: 13vh;
+		margin-bottom: 2rem;
+	}
+
+	.timer,
+	.errors,
+	.accuracy,
+	.cpm,
+	.wpm {
+		margin-right: 1rem;
+		height: 9vh;
+	}
+
+	.wpm {
+		margin-left: 1rem;
+	}
 }
