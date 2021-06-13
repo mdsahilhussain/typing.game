@@ -67,10 +67,12 @@
 	grid-column-end: span 12;
 }
 
+
 @media screen and (max-width: 1024px) {
  .case{
  	height: 15rem;
  	width: 45rem;
+ 	margin-top: 4.5rem;
  }
  .key{
  	font-size: 7px;
