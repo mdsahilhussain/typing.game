@@ -306,8 +306,29 @@ textarea {
 	}
 
 	.header {
-		height: 23vh;
+		height: 25vh;
 		margin-bottom: 1rem;
+	}
+
+	.header_text {
+		font-size: 0.8rem;
+	}
+
+	.A,
+	.B,
+	.C,
+	.G,
+	.Q,
+	.J {
+		display: none;
+	}
+
+	.curr_time,
+	.curr_errors,
+	.curr_accuracy,
+	.curr_cpm,
+	.curr_wpm {
+		font-size: 1rem;
 	}
 
 	.timer,
@@ -328,17 +349,12 @@ textarea {
 		height: 7rem;
 	}
 
-	.social {
-		top: 100%;
-		transform: translateY(20%);
-	}
-
 }
 
 @media screen and (max-width:576px) {
 	.header {
 		padding: 0.8rem 0.2rem;
-		height: 13vh;
+		height: 15vh;
 		margin-bottom: 2rem;
 	}
 
@@ -347,12 +363,25 @@ textarea {
 	.accuracy,
 	.cpm,
 	.wpm {
-		margin-right: 1rem;
+		margin-right: 0.7rem;
 		height: 9vh;
 	}
 
 	.wpm {
-		margin-left: 1rem;
+		margin-left: 0.6rem;
+	}
+
+	.inputArea {
+		margin: 2rem 0;
+		height: 9rem;
+	}
+
+	.timer,
+	.errors,
+	.accuracy,
+	.cpm,
+	.wpm {
+		height: 11vh;
 	}
 
 }
