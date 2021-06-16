@@ -349,6 +349,11 @@ textarea {
 		height: 7rem;
 	}
 
+	.social {
+		top: 4%;
+		transform: translateY(-4%);
+	}
+
 }
 
 @media screen and (max-width:576px) {
@@ -382,6 +387,12 @@ textarea {
 	.cpm,
 	.wpm {
 		height: 11vh;
+	}
+
+		.social {
+		flex-direction: row;
+		top: 100%;
+		transform: translateY(-100%);
 	}
 
 }
